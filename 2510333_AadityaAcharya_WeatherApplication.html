@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="2510333_AadityaAcharya_WeatherApplication.css"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1 id="head">Weather in Your City</h1>
+    <div class="card">
+      <!-- input field to search city -->
+      <form class="search" id="form">
+        <input
+          type="text"
+          name="q"
+          placeholder="swansea"
+          spellcheck="false"
+          id="cityname"
+        />
+        <!-- button -->
+        <button class="button" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <div class="weather">
+        <!-- city date and day -->
+        <h2 id="city"></h2>
+        <p id="dateAndDay" style="font-size: 30px"></p>
+        <!-- time -->
+        <p id="time"></p>
+        <!-- weather conditions -->
+        <h2 id="weather"></h2>
+        <img id="wIcon" src="" alt="Weather icon" />
+        <!-- weather icon -->
+        <p id="WeatherCondition" style="font-size: 30px"></p>
+        <!-- temperature in celsius -->
+        <h3 id="temp"></h3>
+        <div class="details">
+          <!-- humidity in % -->
+          <div class="hpw">
+            <p>Humidity</p>
+            <p id="humidity"></p>
+          </div>
+          <!-- pressure in hpa -->
+          <div class="hpw">
+            <p>Pressure</p>
+            <p id="pressure"></p>
+          </div>
+          <!-- wind -->
+          <div class="hpw">
+            <p>Wind speed</p>
+            <!-- wind speed in m/s-->
+            <p id="sped"></p>
+            <!-- wind direction i degree-->
+            <p id="wind"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript connection -->
+    <script src="2510333_AadityaAcharya_WeatherApplication.js"></script>
+  </body>
+</html>
